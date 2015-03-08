@@ -3,7 +3,7 @@ FROM ubuntu:trusty
 ENV NGINX_VERSION 1.7.10
 
 # Update and install minimal.
-RUN apt-get update && apt-get install --yes --no-install-recommends --no-install-suggests git && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install --yes --no-install-recommends --no-install-suggests git wget && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN wget http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz
 RUN git clone https://github.com/nbs-system/naxsi.git
