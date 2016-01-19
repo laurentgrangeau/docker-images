@@ -10,4 +10,5 @@ COPY eth-proxy.conf /tmp/eth-proxy/
 
 WORKDIR /tmp/eth-proxy/
 
+EXPOSE 8080
 CMD python ./eth-proxy.py
