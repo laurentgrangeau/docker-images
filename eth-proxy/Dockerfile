@@ -8,4 +8,6 @@ RUN unzip eth-proxy.zip
 
 COPY eth-proxy.conf /tmp/eth-proxy/
 
+WORKDIR /tmp/eth-proxy/
+
 CMD python ./eth-proxy.py
