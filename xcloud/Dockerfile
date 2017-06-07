@@ -18,7 +18,7 @@ RUN apt-get install -yy docker
 RUN pip install awscli
 
 # Docker-machine
-RUN curl -L https://github.com/docker/machine/releases/download/v0.12.0/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine && chmod +x /tmp/docker-machine && sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
+RUN curl -L https://github.com/docker/machine/releases/download/v0.12.0/docker-machine-`uname -s`-`uname -m` > /usr/local/bin/docker-machine && chmod +x /usr/local/bin/docker-machine
 
 # Azure CLI
 RUN curl -L https://aka.ms/InstallAzureCli | bash
